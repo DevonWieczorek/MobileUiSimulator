@@ -89,7 +89,7 @@ function simulateMobileUI(os, url){
     $('#mobile-UI-Test-Wrapper').prepend(topDiv);
     $('#mobile-UI-Test-Wrapper').append(bottomDiv);
 
-    // uaSpoof(w,h);
+    // uaSpoof(w,h,os);
     $('#mobile-UI-Test-Wrapper > iframe').attr('src', url);
 
 }
