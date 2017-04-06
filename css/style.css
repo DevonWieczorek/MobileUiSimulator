@@ -1,0 +1,94 @@
+#toolWrapper{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0px 15%;
+}
+
+#innerWrapper{
+    display: inline-block;
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    padding-right: 20px;
+}
+#innerWrapper *{ width: 100%; }
+
+#url{
+    height: 25px;
+    margin: 5px 0px;
+    line-height: 25px;
+}
+
+.btn{
+    padding: 10px 0px;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+}
+
+#response{
+    display: none;
+    overflow: hidden;
+}
+
+#mobile-UI-Test-Wrapper{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 320px;
+    min-height: 568px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#mobile-UI-Test-Wrapper.ios{ padding: 64px 0px 44px; }
+#mobile-UI-Test-Wrapper.android{ padding: 88px 0px 56px; }
+
+#mobile-UI-Test-Wrapper.ios.scrolled{ padding: 40px 0px 0px; }
+#mobile-UI-Test-Wrapper.android.scrolled{ padding: 32px 0px 0px; }
+
+#ios-UI-Top, 
+#android-UI-Top, 
+#ios-UI-Bottom, 
+#android-UI-Bottom{
+    display: block;
+    width: 100%; 
+    background: #000;
+    position: absolute;
+    left: 0px;
+    z-index: 99999;
+}
+
+#ios-UI-Top, 
+#android-UI-Top{
+    top: 0px;
+}
+
+#ios-UI-Bottom, 
+#android-UI-Bottom{
+    bottom: 0px;
+}
+
+/* Status Bar: 20px
+// URL Bar: 44px
+// Bottom Bar: 44px */
+#ios-UI-Top{ height: 64px; }
+#ios-UI-Bottom{ height: 44px; }
+.scrolled #ios-UI-Top{ height: 40px; }
+.scrolled #ios-UI-Bottom{ display: none; }
+
+/* Android dimensions are based on Chrome which are larger than the native UI
+// Status Bar: 32px
+// URL Bar: 56px
+// Bottom Bar: 56px */
+#android-UI-Top{ height: 88px; }
+#android-UI-Bottom{ height: 56px; }
+.scrolled #android-UI-Top{ height: 32px; }
+.scrolled #android-UI-Bottom{ display: none; }
+
+#mobile-UI-Test-Wrapper > iframe{
+    height: 100%;
+    border: none !important;
+}

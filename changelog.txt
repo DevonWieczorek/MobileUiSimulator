@@ -1,0 +1,4 @@
+CHANGE LOG:
+
+version 1.0.0 - 4/6/2017
+# Initial Build and commit to GitHub
