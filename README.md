@@ -29,3 +29,6 @@ KNOWN LIMITATIONS:
   that many pixels.
   This can be manually remedied by calling the following function from the console: afterFrameLoad(getScrollbarWidth());
   
+  
+  Example can be found on: http://www.flowpreview.com/campaign.aspx?LaunchCode=8BA28E86-3928-242F-284A-25992EF3A7778ACFB3F0&cIdx=12&CID=6693
+  
